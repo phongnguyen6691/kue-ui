@@ -4,9 +4,9 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    'ember-cli-babel': {
-      includePolyfill: true,
-    },
+    babel: {
+      sourceMaps: 'inline'
+    }
   });
 
   // disabled until https://github.com/yesmeck/jquery-jsonview/issues/26 is fixed

@@ -5,7 +5,7 @@ import { A } from '@ember/array';
 import Component from '@ember/component';
 
 import _ from 'lodash';
-
+/* eslint-disable no-console */
 export default Component.extend({
     breakdowns: A([]),
     selected: null,

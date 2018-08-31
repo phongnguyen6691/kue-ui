@@ -6,10 +6,6 @@
 .jobs {width:100%; }
 
 /* routes */
-.route {
-  margin-left: 250px;
-  margin-right: 400px;
-}
 .route-margin-left {
   margin-left: 250px;
 }
@@ -21,7 +17,7 @@
 .route-jobs-index {padding: 20px;}
 
 /* Menu */
-.menu { position: fixed; width: 250px; height: 100%; background: #262626; overflow: scroll; overflow-x: hidden;}
+.menu { height: 100%; background: #262626;}
 .menu .logo { height: 75px;line-height: 75px; text-align: center;}
 .menu .logo a { font-family: Montserrat-Regular; font-size: 24px; color: white; text-decoration: none;}
 .menu-list a.item, .menu-list a.sub-item {
@@ -59,8 +55,19 @@
 .job:hover {background: #ededed; cursor: pointer;}
 
 /* right panel */
-.panel-right { position: fixed; right: 0; top: 0; width: 400px; height: 100%; overflow-y: scroll;}
-.job-detail .title { height: 75px; line-height: 75px; font-family: 'Open Sans', sans-serif; font-size: 14px; padding-left: 20px; border-bottom: 2px solid #646464;}
+.panel-left {width: 70%; height: 100%; float: left;}
+.panel-right {width: 30%; height: 100%; float: left;}
+.job-detail .title { 
+  height: 59px;
+  font-weight: bold;
+  color: #3f51b5;
+  text-align: center;
+  line-height: 59px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding-left: 20px;
+  border-bottom: 2px solid #646464;
+}
 
 /* paging component */
 .paging { border-right: 1px solid rgb(239, 239, 239); height: 40px; line-height: 40px; font-family: 'Open Sans'; padding-left: 10px; font-size: 12px; text-transform: uppercase;}

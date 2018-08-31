@@ -1,4 +1,5 @@
 <div class="route route-jobs-type">
+  <div class="panel-left">
   {{#jobs-filter type=type selectedState=state page=page sort=sort}}
     {{jobs-table jobs=model order=order orderAction="updateOrder"}}
 
@@ -14,6 +15,7 @@
       Per page
     </div>
   {{/jobs-filter}}
+  </div>
   <div class="panel-right">
     {{#if (eq selectedJobs.length 1)}}
       {{job-detail job=selectedJobs.firstObject action="goToJob" removeAction="removeJob"}}
